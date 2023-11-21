@@ -168,8 +168,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     // Determine the initial center
     LatLng initialCenter = locations.isNotEmpty
-        ? locations.first.latlng
-        : LatLng(40.785091, -73.968285); // Default center
+        ? locations.last.latlng
+        : LatLng(43.94408,-78.89684); // Default center
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
