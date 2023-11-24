@@ -156,7 +156,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void loadGpxData() async {
-    List<GeoLocation> gpxLocations = await parseGpxFile('../data/cedar_valley.gpx');
+    List<GeoLocation> gpxLocations = await parseGpxFile('lib/cedar_valley.gpx');
     setState(() {
       locations.addAll(gpxLocations);
       // Update markers and polyline
